@@ -23,7 +23,6 @@ int main(void)
 	 }
 	 cont++;
 	}
-	return 0;
 	
 	printf(factores[0]);
 	printf(factores[1]);

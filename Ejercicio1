@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <math.h>
 
 //Dado n, calcular suma de los factores primos.
 
 //
-int primo = 0;
+int primo = 1;
 int cont = 0;
 int n = 9;
 
@@ -14,7 +15,7 @@ int factores[100];
 
 int main(void) 
 {
-	for (cont = 1; primo < n; primo++)
+	for (cont = 0; primo < n; primo++)
 	{
 	 cck = n/primo;
 	 if(cck==floor(cck))
@@ -22,9 +23,8 @@ int main(void)
       factores[cont];
 	 }
 	 cont++;
+	 //printf("%s\n", cont);
 	}
 	
-	printf(factores[0]);
-	printf(factores[1]);
-	
+	return factores[0];
 }

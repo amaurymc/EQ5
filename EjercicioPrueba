@@ -11,7 +11,7 @@ mismo factor, y se pasa al siguiente. Al finalizar, se calcula la suma de los fa
 factor, aunque no sea primo.
 
 Notas: El numero maximo admitido que puede tener n varia en la memoria del sistema y del compilador, en mi caso fue 1457, pero puede
-ser aun menor en dispositivos/compiladores que no sean de bajo rendimiento. No calculara los factores de numeros como 0 y negativos.
+ser aun menor en dispositivos/compiladores que sean de bajo rendimiento. No calculara los factores de numeros como 0 y negativos.
 */
 
 //PREMISA//

@@ -121,9 +121,10 @@ int main(void)
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   //SALIDA//
- 	return printf("La suma de los factores primos es %d\n", sum+1); //Aqui se le puede quitar el +1 si se desea ver solo los factores primos.
+  printf("La suma de los factores primos es %d\n", sum+1); //Aqui se le puede quitar el +1 si se desea ver solo los factores primos.
   /////////
-  system("pause");
+  getchar();
+  return 0;
  }
 }
 

@@ -5,9 +5,10 @@ Salidas: Cliente, TotalCaja, TotalDesc, TotalN, PrecDesc1, PrecDesc2, PrecDesc3,
 Procedimiento: Se ingresa la cantidad de articulos y se lee el precio de cada uno,
 Esto se guarda en una variable llamada TotalN, Posteriormente se lee TotalN y dependiendo
 de la suma se decide el descuento que se le hace, y se le informa al cliente,
-al terminar esto se le pregunta al operador si hay otro cliente, si lo hay se repite
-el proceso de lo contrario informa cuanto se desconto, cuanto se cobro y cuantos clientes
+al terminar esto informa cuanto se desconto, cuanto se cobro y cuantos clientes
 fueron atendidos.
+Notas: El codigo fue diseñado para tener un ciclo Do ... while ... pero no funciono
+por eso se elimino y quedaron algunas cosas "raras"
 */
 
 #include <stdio.h>
@@ -17,8 +18,8 @@ int main(){
   float Desc1 = .05, Desc2 = .11, Desc3 = .18, Desc4 = .25, TotalN, Descuento1 = 0, Descuento2 = 0, Descuento3 = 0, Descuento4 = 0;
   float PrecDesc1 = 0, PrecDesc2 = 0, PrecDesc3 = 0, PrecDesc4 = 0, TotalDesc = 0, TotalCaja = 0, TotalPago = 0, PrecioN = 0;
   int n, Articulos;
-  int n = 0;
-  int TotalN = 0;
+  n = 0;
+  TotalN = 0;
   //Entradas: Se leen los articulos.
   printf("Ingrese la cantidad de articulos\n");
   scanf("%d",&Articulos);
@@ -72,11 +73,10 @@ int main(){
       }
     }
   }
-  //Proceso: Se hacen las operaciones correspondientes y se pregunta si hay otro cliente.
-  Cliente = Cliente + 1;
+  //Proceso: Se hacen las operaciones correspondientes
   TotalCaja = TotalCaja + TotalPago;
   TotalDesc = Descuento1 + Descuento2 + Descuento3 + Descuento4;
-  //Salidas: Informa cuantos clientes, cuanto se cobro y cuanto se desconto.
+  //Salidas: Informa cuanto se cobro y cuanto se desconto.
   printf("El total de venta fue de: %f\n", TotalCaja );
   printf("Se desconto un total de: %f\n", TotalDesc);
   return 0;

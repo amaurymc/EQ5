@@ -3,8 +3,7 @@
 int main(){
 float Desc1 = .05, Desc2 = .11, Desc3 = .18, Desc4 = .25, TotalN, Descuento1 = 0, Descuento2 = 0, Descuento3 = 0, Descuento4 = 0;
 float PrecDesc1 = 0, PrecDesc2 = 0, PrecDesc3 = 0, PrecDesc4 = 0, TotalDesc = 0, TotalCaja = 0, TotalPago = 0, PrecioN = 0;
-int n, Articulos, Cliente = 0;
-char Decs = 'S';
+int n, Articulos, Cliente = 0, Decs;
   do {
     int n = 0;
     int TotalN = 0;
@@ -61,9 +60,9 @@ char Decs = 'S';
     Cliente = Cliente + 1;
     TotalCaja = TotalCaja + TotalPago;
     TotalDesc = Descuento1 + Descuento2 + Descuento3 + Descuento4;
-    printf("Desea capturar otro cliente? S/N \n" );
-    scanf("%s", Decs);
-  } while(Decs == 'N' || Decs == 'n');
+    printf("Desea capturar otro cliente? 1.-Si/2.-No \n" );
+    scanf("%d", Decs);
+  } while(Decs == 1);
   printf("Se atendio a %d Clientes \n", Cliente );
   printf("El total de venta fue de: %f\n", TotalCaja );
   printf("Se desconto un total de: %f\n", TotalDesc);

@@ -26,10 +26,10 @@ int lista[99999999]; //Lista de todos los numeros introducidos por el usuario.
 int main()
 {
  //DECLARACIONES//
- int num, cont, tope, tronoMin, tronoMax;
+ int numero, contador, tope, tronoMin, tronoMax;
 
- num = 0; //Numero a introducir por el usuario.
- cont = 0; //Contador para nuestro ciclo.
+ numero = 0; //Numero a introducir por el usuario.
+ contador = 0; //Contador para nuestro ciclo.
  tope = 0; //Total de numeros a introducir.
 
  tronoMin = 0; //Trono del numero mas pequeño.
@@ -40,29 +40,29 @@ int main()
  scanf("%d", &tope);
  ////////////
 
- for (cont = 0; cont < tope; cont++)
+ for (contador = 0; contador < tope; contador++)
  {
   //ENTRADAS//
   printf("Por favor, introduzca un numero: ");
-  scanf("%d", &num);
+  scanf("%d", &numero);
   ////////////
 
 
   ///PROCEDIMIENTO///
-  lista[cont] = num;
+  lista[contador] = numero;
 
-  if (cont == 0)
+  if (contador == 0)
   {
-   tronoMin = num;
-   tronoMax = num;
+   tronoMin = numero;
+   tronoMax = numero;
   }
-  if (num < tronoMin)
+  if (numero < tronoMin)
   {
-   tronoMin = num;
+   tronoMin = numero;
   }
-  if (num > tronoMax)
+  if (numero > tronoMax)
   {
-   tronoMax = num;
+   tronoMax = numero;
   }
   ////////////////////
  }

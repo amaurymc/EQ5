@@ -74,5 +74,5 @@ int main()
 
  scanf("%d", &tope); //GetChar no me funciono aqui, asi que solo reescribo una variable.
 
- return 0;
+ return 0; //Creo que esto se refiere al ''valor 0''.
 }

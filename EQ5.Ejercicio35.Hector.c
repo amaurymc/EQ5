@@ -6,8 +6,13 @@ int int main() {
   for (i=0; i = nmenor; i++) {
     for (m = 0; m = nmenor ;m++) {
       if (i <= m) {
-        printf("%d  %d\n",i m );
+        printf("%d  %d",i , m );
       }
+      else {
+        printf("    ");
+        }
+      }
+      printf("\n");
     }
   }
   return 0;

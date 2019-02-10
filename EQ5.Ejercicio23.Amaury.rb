@@ -22,11 +22,11 @@ e^x= 1 + x + x^2/2! + x^3/3! + ... + x^n/n!
 def main()
  #//DECLARACIONES//
 
- elevacion = 0; #//El numero por el cual e se encuentra elevado.
- iteracion = 30; #//Utilizado para limitar el ciclo.
- usoTemp = 1; #//Uso temporal.
- respuesta = 1; #//Respuesta.
- cont = 0; #//Para el ciclo.
+ elevacion = 0; #El numero por el cual e se encuentra elevado.
+ iteracion = 30; #Utilizado para limitar el ciclo.
+ usoTemporal = 1; #Uso temporal.
+ respuesta = 1; #Respuesta.
+ contador = 0; #Para el ciclo.
 
  #//ENTRADAS//
  print "Por favor, introduzca x: "
@@ -34,14 +34,14 @@ def main()
  #////////////
 
  #//PROCEDIMIENTO//
- for cont in 1..iteracion
-  usoTemp = (usoTemp*elevacion)/cont
-  respuesta = respuesta + usoTemp
+ for contador in 1..iteracion
+  usoTemporal = (usoTemporal*elevacion)/contador
+  respuesta = respuesta + usoTemporal
  end
  #/////////////////
 
  #//SALIDA//
- print "Respuesta: #{respuesta}"
+ puts "Respuesta: #{respuesta}"
  #/////////
 
  gets

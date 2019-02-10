@@ -30,33 +30,33 @@ Para terminar se debe escribir un valor 0.
 #include <stdio.h>
 #include <math.h>
 
-//DECLARACIONES//
-float P; //Valor invertido
-float i; //Tasa de interes.
-float n; //Numero de periodos
-float VF; //Respuesta. Valor Futuro.
-
 int main()
 {
+ //DECLARACIONES//
+ float valorInvertido; //Valor invertido
+ float tasaInteres; //Tasa de interes.
+ float numPeriodos; //Numero de periodos
+ float valorFuturo; //Respuesta. Valor Futuro.
+
  //ENTRADAS//
  printf("Por favor, introduzca el monto a invertir: ");
- scanf("%f", &P);
+ scanf("%f", &valorInvertido);
  printf("Por favor, introduzca el total de periodos: ");
- scanf("%f", &n);
+ scanf("%f", &numPeriodos);
  printf("Por favor, introduzca el interes: ");
- scanf("%f", &i);
- i = i/100;
+ scanf("%f", &tasaInteres);
+ tasaInteres = tasaInteres/100;
  ////////////
 
  //PROCEDIMIENTO//
- VF = P*(pow(1+i, n));
+ valorFuturo = valorInvertido*(pow(1+tasaInteres, numPeriodos));
  /////////////////
 
  //SALIDA//
- printf("El valor futuro es: %f\n", VF);
+ printf("El valor futuro es: %f\n", valorFuturo);
  /////////
 
- scanf("%f", &i); //GetChar no me funciono aqui, asi que solo reescribo una variable.
+ scanf("%f", &tasaInteres); //GetChar no me funciono aqui, asi que solo reescribo una variable.
 
  return 0; //Creo que esto se refiere al ''valor 0''.
 }

@@ -25,14 +25,14 @@ int main()
 {
 
  //DECLARACIONES//
- float elevacion, usoTemp, respuesta;
- int iteracion, cont;
+ float elevacion, usoTemporal, respuesta;
+ int iteracion, contador;
 
  elevacion = 0; //El numero por el cual e se encuentra elevado.
  iteracion = 30; //Utilizado para limitar el ciclo.
- usoTemp = 1; //Uso temporal.
+ usoTemporal = 1; //Uso temporal.
  respuesta = 1; //Respuesta.
- cont = 0; //Para el ciclo.
+ contador = 0; //Para el ciclo.
 
  //ENTRADAS//
  printf("Por favor, introduzca x: ");
@@ -40,10 +40,10 @@ int main()
  ////////////
 
  //PROCEDIMIENTO//
- for (cont = 1; cont<=iteracion; cont++)
+ for (contador = 1; contador<=iteracion; contador++)
  {
-  usoTemp = (usoTemp*elevacion)/cont;
-  respuesta = respuesta + usoTemp;
+  usoTemporal = (usoTemporal*elevacion)/contador;
+  respuesta = respuesta + usoTemporal;
  }
  /////////////////
 
@@ -51,7 +51,7 @@ int main()
  printf("Respuesta: %f\n", respuesta);
  /////////
 
- scanf("%f", &usoTemp); //GetChar no me funciono aqui, asi que solo reescribo una variable.
+ scanf("%f", &usoTemporal); //GetChar no me funciono aqui, asi que solo reescribo una variable.
 
  return 0;
 }

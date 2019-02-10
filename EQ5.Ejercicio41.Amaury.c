@@ -20,18 +20,21 @@ Utilice una estructura de repetición Para...hasta.*/
 
 #include <stdio.h>
 
-//DECLARACIONES//
-int num; //Numero a introducir por el usuario.
-int cont; //Contador para nuestro ciclo.
-int tope; //Total de numeros a introducir.
-
-int tronoMin = 0; //Trono del numero mas pequeño.
-int tronoMax = 0; //Trono del numero mas grande.
-
-int lista[99999999]; //Lista de todos los numeros introducidos por el usuario
+int lista[99999999]; //Lista de todos los numeros introducidos por el usuario.
+//SE QUE NO SE DEBE DE USAR VARIABLES GLOBALES, PERO MI CODIGO NO COMPILA SI NO PONGO LAS LISTAS COMO GLOBALES.
 
 int main()
 {
+ //DECLARACIONES//
+ int num, cont, tope, tronoMin, tronoMax;
+
+ num = 0; //Numero a introducir por el usuario.
+ cont = 0; //Contador para nuestro ciclo.
+ tope = 0; //Total de numeros a introducir.
+
+ tronoMin = 0; //Trono del numero mas pequeño.
+ tronoMax = 0; //Trono del numero mas grande.
+
  //ENTRADAS//
  printf("Por favor, introduzca el total de numeros a comparar: ");
  scanf("%d", &tope);

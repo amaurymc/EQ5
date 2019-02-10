@@ -61,7 +61,7 @@ def main()
  #//SALIDA//
  puts "Numero mayor: #{tronoMax}"
  puts "Numero menor: #{tronoMin}"
- #//////////
+ #///////////
 
  gets
 end

@@ -1,19 +1,21 @@
-int int main() {
-  int n, nmenor;
+#include "stdio.h"
+
+int main() {
+  int n, i, m;
   printf("Ingresa un numero:\n");
-  scanf("%d\n", &n);
-  nmenor = n - 1
-  for (i=0; i = nmenor; i++) {
-    for (m = 0; m = nmenor ;m++) {
-      if (i <= m) {
-        printf("%d  %d",i , m );
+  scanf("%d", &n);
+  for (i = 0; i < n; i++)
+  {
+    for (m = 0; m < n; m++)
+    {
+      if ( i <= m ) {
+        printf("%d%d  ", i, m );
       }
-      else {
-        printf("    ");
-        }
+      else{
+        printf("    " );
       }
-      printf("\n");
     }
+    printf("\n");
   }
   return 0;
 }

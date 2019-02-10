@@ -21,8 +21,8 @@ No estoy seguro de cuantos numeros pueda comparar, pero estableci como maximo 99
 
 def main()
  #//DECLARACIONES//
- num = 0 #Numero a introducir por el usuario.
- cont = 0 #Contador para nuestro ciclo.
+ numero = 0 #Numero a introducir por el usuario.
+ contador = 0 #Contador para nuestro ciclo.
  tope = 0 #Total de numeros a introducir.
 
  tronoMin = 0 #Trono del numero mas pequeño.
@@ -35,25 +35,25 @@ def main()
  tope = gets.chomp.to_i
  #////////////
 
- for cont in 0..tope-1
+ for contador in 0..tope-1
   #//ENTRADAS//
   print "Por favor, introduzca un numero: "
-  num = gets.chomp.to_i
+  numero = gets.chomp.to_i
   #////////////
 
 
   #///PROCEDIMIENTO///
-  lista[cont] = num
+  lista[contador] = numero
 
-  if cont == 0
-   tronoMin = num
-   tronoMax = num
+  if contador == 0
+   tronoMin = numero
+   tronoMax = numero
   end
-  if num < tronoMin
-   tronoMin = num
+  if numero < tronoMin
+   tronoMin = numero
   end
-  if num > tronoMax
-   tronoMax = num
+  if numero > tronoMax
+   tronoMax = numero
   end
   #////////////////////
  end
@@ -61,9 +61,11 @@ def main()
  #//SALIDA//
  puts "Numero mayor: #{tronoMax}"
  puts "Numero menor: #{tronoMin}"
- #///////////
+ #//////////
 
  gets
+
+ return 0 #Creo que esto se refiere al ''valor 0''.
 end
 
 main()

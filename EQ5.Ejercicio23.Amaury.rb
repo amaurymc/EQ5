@@ -46,7 +46,7 @@ def main()
 
  gets
  
- return 0; #Creo que esto se refiere al ''valor 0''.
+ return 0 #Creo que esto se refiere al ''valor 0''.
 end
 
 main()

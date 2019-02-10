@@ -21,35 +21,37 @@ e^x= 1 + x + x^2/2! + x^3/3! + ... + x^n/n!
 
 #include <stdio.h>
 
-//DECLARACIONES//
-float elevacion; //El numero por el cual e se encuentra elevado.
-int iter = 30; //Utilizado para limitar el ciclo.
-float uso = 1; //Uso temporal.
-float res = 1; //Respuesta.
-
-int i; //Para el ciclo.
-
-
 int main()
 {
+
+ //DECLARACIONES//
+ float elevacion, usoTemp, respuesta;
+ int iteracion, cont;
+
+ elevacion = 0; //El numero por el cual e se encuentra elevado.
+ iteracion = 30; //Utilizado para limitar el ciclo.
+ usoTemp = 1; //Uso temporal.
+ respuesta = 1; //Respuesta.
+ cont = 0; //Para el ciclo.
+
  //ENTRADAS//
  printf("Por favor, introduzca x: ");
  scanf("%f", &elevacion);
  ////////////
 
  //PROCEDIMIENTO//
- for (i = 1; i<=iter; i++)
+ for (cont = 1; cont<=iteracion; cont++)
  {
-  uso = (uso*elevacion)/i;
-  res = res + uso;
+  usoTemp = (usoTemp*elevacion)/cont;
+  respuesta = respuesta + usoTemp;
  }
  /////////////////
 
  //SALIDA//
- printf("Respuesta: %f\n", res);
+ printf("Respuesta: %f\n", respuesta);
  /////////
 
- scanf("%f", &uso); //GetChar no me funciono aqui, asi que solo reescribo una variable.
+ scanf("%f", &usoTemp); //GetChar no me funciono aqui, asi que solo reescribo una variable.
 
  return 0;
 }

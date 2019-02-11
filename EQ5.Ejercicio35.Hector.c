@@ -1,4 +1,5 @@
 /*
+Hecho por:Hector A. V. Cosgalla
 Entradas:Un numero n
 Salidas:La diagonal superior de una tabla de nxn
 Procedimiento:Empiza leyendo un numero n y atraves de 2 ciclos for
